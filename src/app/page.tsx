@@ -5,7 +5,7 @@ import Link from "next/link";
 
 import { BsArrowRightSquare } from "react-icons/bs";
 import { Input } from "@/components/input";
-import { GameCard } from "@/components/gameCard";
+import { GameCard } from "@/components/GameCard";
 
 async function getDalyGame() {
   try {
