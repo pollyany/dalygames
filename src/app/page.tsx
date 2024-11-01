@@ -2,7 +2,9 @@ import { Container } from "@/components/container";
 import { GameProps } from "@/utils/types/game";
 import Image from "next/image";
 import Link from "next/link";
+
 import { BsArrowRightSquare } from "react-icons/bs";
+import { Input } from "@/components/input";
 
 async function getDalyGame() {
   try {
@@ -30,8 +32,9 @@ export default async function Home() {
             <div className="w-full max-h-96 h-96 relative rounded-lg">
               <div className="absolute z-20 bottom-0 p-3 flex justify-center items-center gap-2">
                 <p className="font-bold text-xl text-white">{dalyGame.title}</p>
-                <BsArrowRightSquare size={24} color="#fff" />
+                <BsArrowRightSquare size={24} color="#FFF" />
               </div>
+
               <Image
                 src={dalyGame.image_url}
                 alt={dalyGame.title}
@@ -44,6 +47,8 @@ export default async function Home() {
             </div>
           </section>
         </Link>
+
+        <Input />
       </Container>
     </main>
   );
